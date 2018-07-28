@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+    {{ super() }}
+{% endblock %}
+
+{% block content %}
+    <div id="colorlib-main">
+			<div class="colorlib-contact">
+				<div class="colorlib-narrow-content">
+					<div class="row">
+						<div class="col-md-3">
+                            <div class="row">
+                                <h2>Add key</h2>
+                                <form method="POST" id="uploadfile" enctype="multipart/form-data">
+                                    <input type="file" name="file"/>
+                                </form>
+                            </div>
+						</div>
+                        <div class="col-md-offset-2">
+                            <button id="uploadbtn">Upload</button>
+                        </div>
+					</div>
+                    <hr class="mb-4">
+                    <div class="row">
+                        <div class="col-md-6">
+                            {% for value in str %}
+                                <li class="nav-item">
+                                   <a class="nav-link active" aria-controls="{{ value }}" aria-selected="true" data-toggle="tab" id="{{ value }}" onclick="requestScript('{{ value }}')" role="tab" aria-expanded="true">{{ value }}</a>
+                                </li>
+                            {% endfor %}
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+{% endblock %}
+
