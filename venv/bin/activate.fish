@@ -29,7 +29,7 @@ end
 # unset irrelevant variables
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/angelo/PycharmProjects/Pgp_utility/venv"
+set -gx VIRTUAL_ENV "/home/angelo/PycharmProjects/pgp-webapp/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

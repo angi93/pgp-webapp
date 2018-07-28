@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/angelo/PycharmProjects/Pgp_utility/venv"
+VIRTUAL_ENV="/home/angelo/PycharmProjects/pgp-webapp/venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
